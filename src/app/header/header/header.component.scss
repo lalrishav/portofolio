@@ -1,0 +1,176 @@
+.second-panel{
+    overflow: scroll;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    position: relative;
+    color: white;
+    .content{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 45px;
+        font-family: Lato;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .second-panel{
+        .content{
+            font-size: 35px;
+        }
+
+        .header{
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .second-panel{
+        .content{
+            font-size: 25px;
+            margin-top: 15px;
+
+        }
+
+        .header{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 350px) {
+    .second-panel{
+        .header{
+            h1{
+                font-size: 35px;
+            }
+        }
+
+        .content{
+            text-align: center;
+        }
+    }
+}
+
+.header{
+    overflow: scroll;
+    padding-top: 50px;
+    margin-left: 30px;
+    h1{
+        font-weight: 700;
+        font-size: 50px;
+        font-family: 'Courier New';
+    }
+}
+
+.third-panel{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    max-height: auto;
+    margin: 0px;
+    position: relative;
+    background-color: red;
+    color: white;
+    .project-card{
+        height: 300px;
+        background-color: black;
+        width: 300px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 20px;
+        border: 1px solid black;
+        display:block;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .project-card:hover{
+        background-color: #fff;    
+    }
+
+    .project-card:last-child:hover{
+        .project-label{
+            color: black;
+        }
+    }
+
+    .project-label{
+        text-align: center;
+        font-family: Lato;
+        font-size: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        line-height: 1;
+    }
+
+    .project-detail{
+        text-align: center;
+        font-family: Lato;
+        font-size: 18px;
+        display: flex;
+        cursor: pointer;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        line-height: 1;
+    }
+}
+
+.fourth-panel{
+    min-height: 100%;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    .card{
+        width: 100%;
+        min-height: 720px;
+    }
+    // .item{
+    //     background-image: url('../../../assets/images/certificate.jpg');
+    //     background-repeat:no-repeat;
+    //     background-size:contain;
+    //     background-position:center;
+    // }
+}
+
+.fifth-panel{
+    background-color: black;
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    align-items: center;
+    .item{
+        padding: 100px;
+        img{
+            cursor: pointer;
+        }
+        img:hover{
+            opacity: .5;
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

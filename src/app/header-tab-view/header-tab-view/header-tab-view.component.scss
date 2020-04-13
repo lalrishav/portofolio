@@ -1,0 +1,240 @@
+
+.first-panel{
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    overflow: scroll;
+    background-repeat: round;
+    img{
+        height: 50%;
+        border-radius: 50%;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
+    .left-panel{
+        height: 80%;
+        position: relative;
+        .user-roles{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .item{
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .item:not(:first-child){
+                padding-top: 90px;
+            }
+        }
+    }
+
+    .right-panel{
+        height: 80%;
+        position: relative;
+        .user-actions{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .item:not(:first-child){
+                padding-top: 90px;
+            }
+        }
+    }
+
+    .pi-fw{
+        font-size: 50px;
+    }
+    
+    button{
+        overflow: hidden;
+        outline: none;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        border: 1px solid silver;
+        border-radius: 50px;
+        background: white;
+        transition: all 0.6s ease;
+        -ms-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+    }
+    
+    button:hover {
+        border-color: black;
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+      
+    button.green:hover {
+    background: rgb(130, 250, 130);
+    }
+    button.red:hover {
+    background: rgb(250, 130, 130);
+    }
+    button.blue:hover {
+    color: white;
+    background: rgb(0, 130, 250);
+    }
+    .name{
+        color: white;
+        text-align: center;
+        h1{
+            font-weight: 700;
+            font-size: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .first-panel{
+        img{
+            height: 30%;
+        }
+    }
+}
+
+.orange {     
+    position:relative;
+    background-color:#e15915;
+    height:50% ;
+    width:100% ;
+    z-index: 2
+}
+
+.orange:after {
+    content: '';
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 100%;
+    border-top: solid 600px #e15915;
+    border-left: solid 500px transparent;
+    border-right: solid 500px transparent;
+}
+
+.green{
+    position: relative;
+    background-color: green;
+    width: 100%;
+    height: 50%;
+}
+
+.blue {     
+    position:relative;
+    background-color:#234561;
+    height:320px ;
+    width:300px ;
+
+
+}
+
+.blue:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 16%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 50px #234561;
+    border-left: solid 150px transparent;
+    border-right: solid 150px transparent;
+}
+
+// .second-panel{
+//     overflow: scroll;
+//     width: 100%;
+//     height: 100%;
+//     margin: 0px;
+//     position: relative;
+//     color: white;
+//     .content{
+//         margin-left: 30px;
+//         margin-top: 45px;
+//         font-family: Lato;
+//         font-size: 20px;
+//         line-height: 1.5;
+
+//     }
+// }
+
+// .header{
+//     overflow: scroll;
+//     padding-top: 50px;
+//     margin-left: 30px;
+//     h1{
+//         font-weight: 700;
+//         font-size: 80px;
+//         font-family: 'Courier New';
+//     }
+// }
+
+// .third-panel{
+//     width: 100%;
+//     background-repeat: round;
+//     height: 100%;
+//     margin: 0px;
+//     position: relative;
+//     background-color: red;
+//     color: white;
+//     .project-card{
+//         height: 300px;
+//         background-color: black;
+//         width: 300px;
+//         margin-left:auto;
+//         margin-right:auto;
+//         margin-top: 20px;
+//         border: 1px solid black;
+//         display:block;
+//         border-radius: 50%;
+//         cursor: pointer;
+//         opacity: 0.7;
+//     }
+
+//     .project-card:hover{
+//         background-color: #fff;    
+//     }
+
+//     .project-label{
+//         text-align: center;
+//         font-family: Lato;
+//         font-size: 50px;
+//         font-weight: 600;
+//         cursor: pointer;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 100%;
+//         line-height: 1;
+//     }
+
+//     .project-detail{
+//         text-align: center;
+//         font-family: Lato;
+//         font-size: 18px;
+//         display: flex;
+//         cursor: pointer;
+//         color: black;
+//         justify-content: center;
+//         align-items: center;
+//         height: 100%;
+//         line-height: 1;
+//     }
+// }
